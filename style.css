@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #ffffff;
+}
+
+/* Header Section */
+
+body > header {
+  background-color: rgba(250, 250, 250, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-inline: auto;
+  max-width: 1200px;
+  border-radius: 0 0 10px 10px;
+  font-size: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 70px;
+}
+
+.promoCode {
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+body > header p {
+  font-weight: 500;
+}
+
+.promoCode a {
+  color: rgba(252, 138, 6, 1);
+  font-weight: 700;
+}
+
+body > header .address {
+  display: flex;
+  gap: 5px;
+}
+body > header .address img {
+  height: 25px;
+  width: 25px;
+}
+
+body > header .address a {
+  font-weight: 500;
+  color: rgba(252, 138, 6, 1);
+  margin-left: 5px;
+}
+
+body > header .cart {
+  background-color: rgba(2, 134, 67, 1);
+  height: 110%;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}
+header .cart img {
+  height: 43px;
+  height: 43px;
+  cursor: pointer;
+  padding-inline: 16px;
+}
+
+header .cart span {
+  padding-inline: 10px;
+  color: rgba(250, 250, 250, 1);
+  font-weight: 600;
+  font-size: 16px;
+  padding-inline: 16px;
+}
+header .cart .HorizontalLine {
+  height: 100%;
+  width: 1px;
+  background-color: rgba(250, 250, 250, 0.7);
+}
+
+/* Hero Sectition */
+
+/* Hero NavBar */
+#hero nav {
+  max-width: 1200px;
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hero nav ul {
+  display: flex;
+}
+#hero nav ul li.active {
+  background-color: rgba(252, 138, 6, 1);
+  color: #fff;
+  border-radius: 99rem;
+}
+#hero nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 12px 20px;
+}
+
+#hero nav #LoginBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(3, 8, 31, 1);
+  color: #fff;
+  border-radius: 99rem;
+  cursor: pointer;
+}
+
+#hero .heroContainer {
+  background-color: rgba(251, 251, 251, 1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-image: url("Assets/img/heroBackground.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: ;
+  max-width: 1200px;
+  width: 100%;
+  height: 610px;
+  margin: 50px auto;
+  padding-inline: 32px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+  border-radius: 1rem;
+}
+#hero .ContentSection {
+  flex-shrink: 0;
+}
+#hero .ContentSection h1 {
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: 600;
+  span {
+    color: rgba(252, 138, 6, 1);
+  }
+}
+#hero .ContentSection > p {
+  margin-bottom: 1rem;
+}
+
+#hero .heroContainer .searchContainer {
+  margin-top: 2rem;
+}
+#hero .heroContainer .searchContainer > p {
+  font-size: 13px;
+}
+#hero .heroContainer .searchContainer > .searchBox {
+  margin-top: 1.5rem;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 54px;
+  border-radius: 999rem;
+  padding-left: 16px;
+}
+#hero .heroContainer .searchContainer > .searchBox input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+#hero .heroContainer .searchContainer > .searchBox #searchBtn {
+  height: 100%;
+  background-color: rgba(252, 138, 6, 1);
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 99rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+#hero .heroContainer .heroMainImage {
+  /* width: 100%; */
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  z-index: 5;
+}
+
+#hero .heroContainer .reviewContent {
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  display: flex;
+}
+
+/* Preview Card */
+
+.reviewContent .reviewCards{
+  position: relative;
+}
+.reviewContent .reviewCard{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 1);
+  width: 350px;
+  left: calc(-350px / 2);
+  padding: 16px;
+  border-radius: 1rem;
+}
+
+.previewHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.previewHeader img{
+  width: 58px;
+}
+.previewHeader span{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Exclusive Deals Style */
+.sectionContainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 50px auto;
+}
+.topFilterMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topFilterMenu .filterBtns button {
+  padding: 16px 32px;
+  border-radius: 60px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.filterBtns button:hover {
+  color: #fc8a06;
+}
+.topFilterMenu .filterBtns button.active {
+  border: 1px solid #fc8a06;
+  color: #fc8a06;
+}
+
+.exclusiveItemsContainer,
+.categoriesItemsContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.exclusiveItemsCard {
+  position: relative;
+  /* border: 1px solid black; */
+  width: 380px;
+  height: 285px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.exclusiveItemsCard .image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.exclusiveItemsCard .offPrice {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 66px;
+  background-color: #03081f;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  right: 20px;
+  border-radius: 0 0 10px 10px;
+}
+.exclusiveItemsCard .content {
+  position: absolute;
+  bottom: 36px;
+  left: 46px;
+}
+.exclusiveItemsCard .content .title {
+  font-size: 18px;
+  color: #fc8a06;
+}
+.exclusiveItemsCard .content .subtitle {
+  font-size: 24px;
+  color: white;
+}
+
+/* Categories Style  */
+.categoriesItems {
+  width: 238px;
+  height: 266px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.categoriesItems .image{
+    /* border: 1px solid black; */
+    flex: 1;
+}
+.categoriesItems .content{
+    padding: 10px;
+}
+.categoriesItems .content .title{
+    font-size: 18px;
+    font-weight: 600;
+}
+.categoriesItems .content .subtitle{
+    font-size: 13px;
+    color: #fc8a06;
+}

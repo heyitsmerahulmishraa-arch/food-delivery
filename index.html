@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Assets/img/logo.svg" type="image/x-icon" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="promoCode">
+        <span class="icon">🌟</span>
+        <p>Get 5% Off your first order, <a href="#">Promo: ORDER5</a></p>
+      </div>
+      <div class="address">
+        <img src="Assets/img/location icon.svg" alt="Location Icon" />
+        <p>Regent Street, A4, A4201, London</p>
+        <a href="#" id="changeLocation">Change Location</a>
+      </div>
+      <div class="cart">
+        <img src="Assets/img/cart icon.svg" alt="Cart Icon" />
+        <div class="HorizontalLine"></div>
+        <span>23 Items</span>
+        <div class="HorizontalLine"></div>
+        <span>GBP 79.89</span>
+        <div class="HorizontalLine"></div>
+        <img src="Assets/img/arrow-down-icon.svg" alt="Right Arrow Icon" />
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <nav>
+          <img src="Assets/img/logo.svg" alt="Logo" />
+          <ul>
+            <li class="active">Home</li>
+            <li>Browse Menu</li>
+            <li>Special Offers</li>
+            <li>Restaurants</li>
+            <li>Track Order</li>
+            <li id="LoginBtn">
+              <img src="Assets/img/user icon.svg" alt="user icon" />
+              <span>Login/Signup</span>
+            </li>
+          </ul>
+        </nav>
+        <div class="heroContainer">
+          <div class="ContentSection">
+            <p>Order Restaurant food, takeaway and groceries.</p>
+            <h1>
+              Feast Your Senses,<br />
+              <span>Fast and Fresh</span>
+            </h1>
+            <div class="searchContainer">
+              <p>Enter a postcode to see what we deliver</p>
+              <div class="searchBox">
+                <input type="text" placeholder="e.g. EC4R 3TE" />
+                <button id="searchBtn">Search</button>
+              </div>
+            </div>
+          </div>
+          <img
+            src="Assets/img/hero-main-image.png"
+            alt="Hero main"
+            class="heroMainImage"
+          />
+          <div class="reviewContent">
+            <img src="Assets/img/hero-subImage.png" alt="SubImage"/>
+            <div class="reviewCards">
+              <div class="reviewCard">
+                <div class="previewHeader">
+                  <img src="Assets/img/logo.svg" alt="Logo"> <span>now</span>
+                </div>
+                <h4>We’ve Received your order!</h4>
+                <p>Awaiting Restaurant acceptance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Exclusive Deals Section -->
+      <section>
+        <div class="ExclusiveSectionContainer sectionContainer">
+          <div class="topFilterMenu">
+            <h2>Up to -40% 🎊 Order.uk exclusive deals</h2>
+            <div class="filterBtns">
+              <button>Vegan</button>
+              <button>Sushi</button>
+              <button class="active">Pizza & Fast food</button>
+              <button>others</button>
+            </div>
+          </div>
+          <div class="exclusiveItemsContainer">
+            <div class="exclusiveItemsCard">
+              <div class="image">
+                <img src="./Assets/img/chef-burgers-london.jpg" alt="" />
+              </div>
+              <p class="offPrice">-40%</p>
+              <div class="content">
+                <p class="title">Restaurant</p>
+                <h3 class="subtitle">Chef Burgers London</h3>
+              </div>
+            </div>
+
+            <div class="exclusiveItemsCard">
+              <div class="image">
+                <img src="./Assets/img/chef-burgers-london.jpg" alt="" />
+              </div>
+              <p class="offPrice">-20%</p>
+              <div class="content">
+                <p class="title">Restaurant</p>
+                <h3 class="subtitle">Grand Ai Cafe London</h3>
+              </div>
+            </div>
+
+            <div class="exclusiveItemsCard">
+              <div class="image">
+                <img src="./Assets/img/chef-burgers-london.jpg" alt="" />
+              </div>
+              <p class="offPrice">-17%</p>
+              <div class="content">
+                <p class="title">Restaurant</p>
+                <h3 class="subtitle">Butterbrot caf'e London</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section>
+        <div class="categoriesSectionContainer sectionContainer">
+          <h2>Order.uk Popular Categories 🤩</h2>
+          <div class="categoriesItemsContainer">
+            <div class="categoriesItems">
+              <div class="image"></div>
+              <div class="content">
+                <p class="title">Burgers & Fast food</p>
+                <p class="subtitle">21 Restaurants</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
